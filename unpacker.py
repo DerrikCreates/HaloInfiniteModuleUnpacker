@@ -50,7 +50,7 @@ def extract_module(module):
     version = gf.read_uint32(fb)
     # version 48: first flight
     # version 51: second flight
-    assert version == 51, "Unsupported file version"
+    #assert version == 51, "Unsupported file version"
     unk0x08 = gf.read_uint32(fb)
     unk0x0C = gf.read_uint32(fb)
     files_count = gf.read_uint32(fb)
